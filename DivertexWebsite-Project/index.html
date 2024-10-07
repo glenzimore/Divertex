@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap5/css/bootstrap.min.css">
+    <title>Divertex</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#home" class="logo">(Logo)</a>
+        <nav class="navigation_bar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a> 
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+      <div class="container">
+          <div class="home_content">
+              <h1 class="display-4 fw-bold">The leading telemarketing<br>company in the Philippines</h1>
+              <p class="lead">Text here text here Text here text here Text here text here Text here text here<br>
+                  Text here text here Text here text here Text here text here Text here text here</p>
+              <a href="#" class="btn btn-custom btn-lg">APPLY NOW!</a> 
+          </div>
+      </div>
+  </section>
+  
+  
+  
+
+<section class="contact" id="about">
+  <div class="container contact-container">
+      <div class="card" style="margin-top: 100px;">
+          <div class="card-body">
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="map-container">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15443.492690430838!2d120.628755!3d14.074367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd0b4a27e3e7eb%3A0xc43c13be9c89c38d!2sP%20Rinoza%20St%2C%20Nasugbu%2C%20Batangas%2C%20Philippines!5e0!3m2!1sen!2sph!4v1696591268231!5m2!1sen!2sph" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="contact-details">
+                          <h2 style="font-size: 30px; font-weight: bold;">Get in Touch</h2>
+                          <p class="text-center">Text here Text here Text here Text here Text here Text here Text here Text here</p> <!-- Centering this paragraph -->
+                          <div class="address text-center" style="font-size: 20px; font-weight: bold;">P Rinoza St., Nasugbu, Batangas</div> <!-- Centering this address -->
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+  
+<section class="mission" id="about">
+  <div class="container">
+      <div class="row g-5"> 
+          <!-- MISSION Card -->
+          <div class="col-md-6 d-flex align-items-stretch"> <!-- Use d-flex and align-items-stretch for equal height -->
+              <div class="card square-card">
+                  <div class="card-body">
+                      <h5 class="card-title" style="font-size: 28px; font-weight: bold; text-align: center; font-family:'Times New Roman', Times, serif;">MISSION</h5>
+                      <p class="card-text" style="margin-top: 25px; margin-left: 20px; margin-right: 20px;">  To cultivate a positive and supportive environment for our employees, fostering the development of their skills and knowledge to achieve our organizational goals. We aim to add value and strength to our global partners through our commitment to excellence and continuous improvement..</p>
+                  </div>
+              </div>
+          </div>
+          <!-- VISION Card -->
+          <div class="col-md-6 d-flex align-items-stretch"> <!-- Use d-flex and align-items-stretch for equal height -->
+              <div class="card square-card">
+                  <div class="card-body">
+                      <h5 class="card-title" style="font-size: 28px; font-weight: bold; text-align: center; font-family:'Times New Roman', Times, serif;">VISION</h5>
+                      <p class="card-text" style="margin-top: 25px; margin-left: 20px; margin-right: 20px;">   To be a goal-oriented company with proven records of achievements, driven with passion to increase organization's profitability, highly motivated, experienced professionals with superb skills in any delegation assigned.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+
+<section class="contact-us py-5" style="background-color: #f9f9f9; border-radius: 8px;" id="contact">
+  <div class="container">
+      <h2 class="text-center mb-4" style="font-family: 'Arial', sans-serif; color: #333;">Contact Us</h2>
+      <div class="row justify-content-center">
+          <div class="col-md-8 col-lg-6"> <!-- Responsive column with more width -->
+              <div class="contact-form text-center">
+                  <form action="#" method="post">
+                      <input type="text" name="name" placeholder="Your Name" required class="form-control mb-3" style="border-radius: 20px; padding: 15px;"> <!-- Rounded corners -->
+                      <input type="email" name="email" placeholder="Your Email" required class="form-control mb-3" style="border-radius: 20px; padding: 15px;">
+                      <textarea name="message" rows="5" placeholder="Your Message" required class="form-control mb-3" style="border-radius: 20px; padding: 15px;"></textarea>
+                      <button type="submit" class="btn btn-primary btn-lg" style="border-radius: 20px; padding: 7px 20px; font-size: 18px; background-color: #a4161b; border-color: #a4161b; transition: transform 0.3s; box-shadow: 0 4px 10px rgba(17, 17, 17, 0.5);">Submit</button> 
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<footer class="py-4" style="background-color: #a4161b; color: #ffffff;">
+  <div class="container text-center">
+      <p class="mb-0" style="font-size: 14px;">&copy; 2024 Telemarketing Company. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+   
+    <script>
+        const navLinks = document.querySelectorAll('.navigation_bar a');
+
+        function removeActiveClasses() {
+            navLinks.forEach(link => link.classList.remove('active'));
+        }
+
+        function setActiveLink() {
+            const sections = document.querySelectorAll('section');
+            let index = sections.length;
+
+            while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
+
+            removeActiveClasses();
+            navLinks[index].classList.add('active');
+        }
+
+        window.addEventListener('scroll', setActiveLink);
+    </script>
+</body>
+</html>

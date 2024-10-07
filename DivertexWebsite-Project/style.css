@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --background-color: #fdfdfd;
+    --second-background-color: #ffffff;
+    --text-color: #000000;
+    --main-color: #000000;
+}
+
+html {
+    font-size: 60%;
+}
+
+body {
+    background: var(--background-color);
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    padding: 4rem 12% 4rem;
+    background: #a4161b;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+}
+
+.logo {
+    font-size: 3rem;
+    color: var(--text-color);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.navigation_bar a {
+    font-size: 1.8rem;
+    color: rgba(253, 253, 253, 0.767);
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.navigation_bar a:hover, .navigation_bar a.active {
+    color: rgb(255, 255, 255);
+    border-bottom: 3px solid var(--main-color);
+}
+
+.home {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.993), rgba(0, 0, 0, 0)), url('images/office.png');
+    background-size: cover;
+    background-position: center;
+    height: 490px; 
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+}
+
+.home_content {
+    margin-top: 60px;
+    color: white;
+    text-align: left;
+    padding: 130px;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+p {
+    margin-bottom: 30px; 
+}
+
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.map-container {
+    flex: 1;
+    min-width: 300px; 
+    margin: 20px;
+}
+
+.contact-details {
+    flex: 1;
+    min-width: 300px; 
+    margin: 20px;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .home_content {
+        padding: 80px;
+    }
+
+    .goal {
+        flex: 1 1 100%; 
+    }
+}
+.card {
+    width: 500rem;
+    margin-top: 10rem;    
+    margin: 20px 0; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.contact-details{
+   
+    margin-top: 150px;
+}
+
+.square-card {
+
+    width: 100%; 
+    height: 400px; 
+ 
+    flex-direction: column; 
+}
+
+.card-body {
+    margin-top: 20px;
+    flex-grow: 1; 
+    display: flex; 
+    flex-direction: column; 
+    text-align: justify;
+    font-size: 20px;
+  
+
+}
+
+.btn-custom {
+    background-color: #a4161b !important; /* Your desired background color */
+    color: white !important; /* Text color */
+    border-radius: 50px !important; /* Makes the button oval */
+    padding: 10px 30px !important; /* Adjusts padding for a better shape */
+    border: none !important; /* Removes default border */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and size */
+}
+
+.btn-custom:hover, .btn-custom:focus {
+    background-color: #a4161b !important; /* Change this to a hover color if needed */
+    outline: none; /* Remove focus outline for a cleaner look */
+    transform: scale(1.1); /* Scale up the button on hover */
+    box-shadow: 0 0 15px rgb(255, 255, 255), 0 0 25px rgba(199, 7, 57, 0.5); /* Glowing effect */
+}
+
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 576px) {
+    footer p {
+        font-size: 12px; /* Smaller font size for mobile */
+    }
+}
+
