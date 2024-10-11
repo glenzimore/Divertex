@@ -33,16 +33,17 @@
         }
     ?>
     
-    <div class="card">
-        <div class="title">
-            <p>Login</p>
-        </div>
-        <form action="" method="post" class="form">
-            <input type="text" name="name" placeholder="User Name" required> 
-            <input type="text" name="password" placeholder="Password" required>
-            <input type="submit" value="Login" name="login_button">
-        </form>
+   <div class="card">
+    <div class="title">
+        <p>Login</p>
     </div>
+    <form action="" method="post" class="form">
+        <input type="text" name="name" placeholder="User Name" required> 
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="submit" value="Login" name="login_button">
+    </form>
+</div>
+
 
     <!-- The Modal for Error Message -->
     <div id="errorModal" class="modal">

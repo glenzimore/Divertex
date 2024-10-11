@@ -48,14 +48,13 @@ body {
 }
 
 .navigation_bar a {
-    font-family: 'Montserrat', sans-serif; /* Use a modern and clean font */
-    font-size: 1.6rem; /* Slightly adjust font size for better readability */
-    color: rgba(0, 0, 0, 0.8); /* Darker text color for contrast */
-    font-weight: 600; /* Increase font weight for bolder text */
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 1.6rem; 
+    color: rgba(0, 0, 0, 0.8); 
+    font-weight: 600; 
     margin-left: 4rem;
     transition: 0.3s ease;
-    border-bottom: 3px solid transparent;
-    text-decoration: none;
+    text-decoration: none; /* No underline */
 }
 
 .navigation_bar a:hover, .navigation_bar a.active {
@@ -70,7 +69,7 @@ body {
 }
 
 .auth-buttons .btn {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Inter-Regular", Helvetica;
     padding: 10px 15px;
     background-color: #982B1C;
     color: #ffffff;
