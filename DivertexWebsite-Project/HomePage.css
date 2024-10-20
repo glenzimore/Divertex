@@ -1,282 +1,109 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    border: none;
-    outline: none;
-    scroll-behavior: smooth;
-    font-family: "Poppins", sans-serif;
-}
-
-/* :root {
-    --background-color: #fdfdfd;
-    --second-background-color: #ffffff;
-    --text-color: #000000;
-    --main-color: #000000;
-} */
-
-html {
-    font-size: 60%;
-}
-
 body {
-    background: var(--background-color);
-    color: var(--text-color);
-    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .header {
     position: fixed;
+    width: 100%;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 50px; /* Adjust as needed */
-    padding: 4rem 12%; /* Adjust this based on your design */
-    background: #ffffff;
-    backdrop-filter: blur(10px);
-    display: flex;
-    justify-content: space-between; /* Aligns content */
-    align-items: center;
-    z-index: 5;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Drop shadow */
+    background-color: white;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
-.header nav {
-    display: flex;
-    gap: 20px;
-}
-
-.navigation_bar a {
-    font-family: "Inter-Regular", Helvetica;
-    font-size: 1.6rem; 
-    color: rgba(0, 0, 0, 0.8); 
-    font-weight: 600; 
-    margin-left: 4rem;
-    transition: 0.3s ease;
-    text-decoration: none; /* No underline */
-}
-
-.navigation_bar a:hover, .navigation_bar a.active {
-    color: #800000;
-    border-bottom: 3px solid var(--main-color);
-}
-
-.auth-buttons {
-    display: flex;
-    gap: 10px;
-    margin-left: auto;
-}
-
-.auth-buttons .btn {
-    font-family: "Inter-Regular", Helvetica;
-    padding: 10px 15px;
-    background-color: #982B1C;
-    color: #ffffff;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 14px;
-    transition: background-color 0.3s;
-}
-
-.auth-buttons .btn:hover {
-    background-color: #ec0e0e;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo img {
-    max-height: 50px; /* Adjust the height to fit within the header */
-    width: auto; /* Keeps the aspect ratio of the logo */
-    transition: transform 0.3s ease;
-    
-}
-
-.logo:hover img {
-    transform: scale(1.1); /* Adds a slight hover effect */
-}
-
 
 .home {
-    background-size: cover;
-    background-position: center;
-    height: 490px;
+    background-color: #f9f9f9;
+    height: 100vh;
     display: flex;
-    justify-content: left;
     align-items: center;
-    position: relative;
-}
-.home_content {
-    margin-top: 60px;
-    color: var(--text-color);
-    text-align: left;
-    padding: 130px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.text-content {
-    flex: 1;
-}
-
-.image-content {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
-
-
-
-h1 {
-    color: #800000;
-    font-size: 4rem;
-}
-
-p {
-    margin-bottom: 30px;
-}
-
-.contact-container {
-    margin-top: 10rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.map-container {
-    flex: 1;
-    min-width: 300px;
-    margin: 20px;
-}
-
-.contact-details {
-    flex: 1;
-    min-width: 300px;
-    margin: 20px;
-}
-
-.contact h2 {
-    margin-bottom: 20px;
-}
-
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2.5rem;
-    }
-
-    .home_content {
-        padding: 80px;
-    }
-
-    .goal {
-        flex: 1 1 100%;
-    }
-}
-
-.card {
-    width: 100%;
-    margin-top: 10rem;
-    margin: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.square-card {
-    width: 100%;
-    height: 400px;
-    flex-direction: column;
-}
-
-.card-body {
-    margin-top: 20px;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    text-align: justify;
-    font-size: 20px;
+    padding-top: 50px;
 }
 
 .btn-custom {
-    background-color: #a4161b !important;
-    color: white !important;
-    border-radius: 50px !important;
-    padding: 10px 30px !important;
-    border: none !important;
+    background-color: #a4161b;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 30px;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.btn-custom:hover, .btn-custom:focus {
-    background-color: #a4161b !important;
-    outline: none;
+.btn-custom:hover {
+    background-color: #800000;
     transform: scale(1.1);
-    box-shadow: 0 0 15px rgb(255, 255, 255), 0 0 25px rgba(199, 7, 57, 0.5);
 }
 
-footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-footer p {
-    margin: 0;
-}
-
-@media (max-width: 576px) {
-    footer p {
-        font-size: 12px;
-    }
-}
-
-
+/* General Styles for Services Section */
 .services {
-    height: 400px;
-    margin-top: 10rem;
-    background-color: #800000; /* Red with 80% opacity */
+    background-color: #800000;
     padding: 60px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center content horizontally */
-    justify-content: center; /* Center content vertically */
 }
 
-.services h1 {
-    font-size: 2.5rem;
-    color: #ffffff;
+.services h3 {
+    color: white;
     margin-bottom: 40px;
 }
 
+/* Flex properties for the row to ensure equal height */
+.services .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Flex properties for each column */
+.services .col-md-4 {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 20px; /* Add some space between rows */
+}
+
+/* Service card styles */
 .service-card {
-    background-color: rgba(255, 255, 255, 0.9); /* White with some transparency */
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    flex: 1;
     transition: transform 0.3s ease;
+    margin-bottom: 20px; /* Ensure some space between cards */
 }
 
+/* Ensure text color inside the service cards is black */
+.service-card h5, .service-card p {
+    color: black !important;
+}
+
+/* Hover effect for service cards */
 .service-card:hover {
     transform: scale(1.05);
 }
 
-.service-title {
-    font-size: 1.5rem;
-    color: #800000;
-    font-weight: bold;
-}
-
-.service-description {
-    font-size: 1rem;
-    color: #333;
-}
-
-
+/* Media query for mobile devices (below 768px width) */
 @media (max-width: 768px) {
+    .services .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .services .col-md-4 {
+        margin-bottom: 20px; /* Add more spacing between rows */
+        padding-left: 10px;  /* Add padding on sides */
+        padding-right: 10px;
+    }
     .service-card {
-        margin-bottom: 20px;
+        margin-bottom: 30px; /* Increase space between cards */
     }
 }
+
+
+
+
+footer {
+    background-color: #ffffff;
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+

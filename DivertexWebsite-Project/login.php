@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="login.css"> <!-- External CSS reference -->
-    <title>Sign Up</title>
+    <title>Login</title>
 </head>
 <body>
 
@@ -17,7 +17,7 @@
             $name = $_POST['name'];
             $password = $_POST['password'];
         
-            $p = crud::connect()->prepare('SELECT * FROM crudtable WHERE firstName = :n AND pass = :p');
+            $p = crud::connect()->prepare('SELECT * FROM crudtable WHERE email = :n AND pass = :p');
             $p->bindValue(':n', $name);
             $p->bindValue(':p', $password);
             $p->execute();
@@ -26,7 +26,7 @@
                 $_SESSION['name'] = $name;
                 $_SESSION['password'] = $password;
                 $_SESSION['validate'] = true;
-                header('location:home.php');
+                header('location:Applicant/applicant.php');
             } else {
                 $error_message = "Your username or password is incorrect"; // Set error message
             }

@@ -1,0 +1,107 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* Flexbox for centering */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full height of the viewport */
+}
+
+/* Container for header and form */
+.container {
+    text-align: center; /* Center the content */
+}
+
+/* Header styling */
+.header {
+    margin-bottom: 20px; /* Space below the header */
+}
+
+.header h1 {
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat */
+    color: #800000; /* Dark Red */
+    font-size: 36px; /* Font size for the main header */
+    margin: 0; /* Remove default margin */
+}
+
+.header .tagline {
+    font-family: 'Roboto', sans-serif; /* Use Roboto for tagline */
+    color: #666; /* Lighter text color */
+    font-size: 18px; /* Font size for the tagline */
+    margin: 5px 0 0; /* Space above tagline */
+}
+
+/* Floating Contact Form */
+.contact-form {
+    width: 300px; /* Fixed width */
+    background-color: #ffffff; /* White background */
+    padding: 20px; /* Padding around the content */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow effect */
+    z-index: 1000; /* Stay above other elements */
+    margin: 0 auto; /* Center the form */
+}
+
+/* Form styling */
+h2 {
+    color: #800000; /* Dark Red */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333; /* Dark text for labels */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="file"] {
+    width: 100%; /* Full width for inputs */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+input[type="file"] {
+    padding: 0; /* Reset padding for file input */
+}
+
+.file-name {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #666; /* Lighter text for file name */
+}
+
+button[type="submit"] {
+    background-color: #800000; /* Dark Red */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%; /* Full width for button */
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #982B1C; /* Lighter Red on hover */
+}
+
+.output {
+    margin-top: 20px;
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+}
